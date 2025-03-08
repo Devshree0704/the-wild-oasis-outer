@@ -6,11 +6,11 @@ const Logo = () => {
     <div>
       <Link href={"/"} className="flex items-center">
         <Image
-          src="/logo-cabin.png"
+          src="/logo-cabin-black-outline.png"
           height="80"
           width="80"
           alt="cabin-logo"
-          className="bg-black"
+          className="rounded-full"
         />
         <p className="font-bold">The Wild Oasis</p>
       </Link>

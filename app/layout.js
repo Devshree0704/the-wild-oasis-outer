@@ -12,11 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="grid grid-rows-[90px_auto] w-screen h-screen">
-        <header className=" relative z-10 text-white">
+      <body className="grid grid-rows-[120px_auto] w-screen h-screen bg-[#116466] overflow-x-hidden">
+        <header className=" relative z-10 text-[#FFCB9A]">
           <Navbar />
         </header>
-        <main>{children}</main>
+        <main className="mx-8">{children}</main>
       </body>
     </html>
   );

@@ -12,7 +12,7 @@ export default function Page() {
         placeholder="blur"
       ></Image>
       <div className="text-white relative z-10 text-center mt-10">
-        <h1 className="text-8xl">Welcome to paradice.</h1>
+        <h1 className="text-8xl">Welcome to paradise.</h1>
         <button className="bg-[#FBFFE4] mt-10 px-4 py-6 font-bold rounded-full text-[#3D8D7A] cursor-pointer hover:bg-amber-100">
           Explore luxury cabins
         </button>
