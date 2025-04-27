@@ -1,4 +1,8 @@
-const Page = () => {
+import Cabin from "../_components/Cabin";
+import { getCabins } from "../_lib/data-service";
+
+const Page = async () => {
+  const cabins = await getCabins();
   return (
     <div>
       <section className="text-4xl mb-8 text-[#FBFFE4]">
@@ -14,6 +18,12 @@ const Page = () => {
         have the ideal stay for every traveler. Book your dream cabin today and
         experience relaxation like never before!
       </p>
+
+      <section className="flex flex-wrap gap-20 justify-evenly my-12">
+        {cabins.map((element) => (
+          <Cabin element={element} key={element.id} />
+        ))}
+      </section>
     </div>
   );
 };

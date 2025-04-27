@@ -10,8 +10,13 @@ const Profile = () => {
       </p>
       <form className="bg-[#2C3531] mt-4 flex flex-col gap-4 p-6 mb-6 rounded-md text-[#D1E8E2]">
         <div className="flex flex-col gap-2">
-          <label>Full name</label>
-          <input className="bg-[#D1E8E2] w-[500px] px-2 py-1 outline-none  rounded-sm" />
+          <label htmlFor="fullName">Full name</label>
+          <input
+            className="bg-[#D1E8E2] w-[500px] px-2 py-1 outline-none  rounded-sm"
+            id="fullName"
+            name="fullName"
+            type="text"
+          />
         </div>
 
         <div className="flex flex-col gap-2">
